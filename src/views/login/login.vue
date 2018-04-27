@@ -47,8 +47,7 @@ export default {
     document.querySelector('body').setAttribute('style', 'background-image: url(/static/img/login-bg.png);min-width: 700px;');
   },
   beforeMount() {
-    let lang = handleLocalStorage('get','lang');
-    this.$i18n.locale = lang;
+    let lang = localStorage.lang || 'en';
     let language = this.language;
     language.find(function(value,index,language){
       if(value.lang === lang){
