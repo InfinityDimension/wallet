@@ -26,5 +26,19 @@
       "success": "复制成功",
       "fail": "复制失败"
     }
+  },
+  "aside":{
+    "menu": "菜单",
+    "home": "主页",
+    "account": "我的钱包",
+    "forging": "区块链设置",
+    "listing": "区块链列表",
+    "vote": "投票",
+    "transfer": "转让",
+    "peers": "其他人"
+  },
+  "head": {
+    "placeholder": "查找 地址/委托/块/传输",
+    "signOut": "退出"
   }
 }

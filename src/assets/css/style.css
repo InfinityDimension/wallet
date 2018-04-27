@@ -11,6 +11,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+input::-webkit-input-placeholder {
+  color: #C5C7CB;
+  font-size: 14px;
+}
 .login {
   width: 700px;
   height: 330px;
@@ -240,8 +244,132 @@ body {
   color: #fff;
 }
 .index {
-  text-align: center;
+  min-width: 1200px;
 }
-.index img {
-  width: 500px;
+.index .aside {
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 200px;
+}
+.index .aside .logo {
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+}
+.index .aside .logo img {
+  width: 137px;
+  height: 24px;
+}
+.index .aside .nav h5 {
+  margin: 20px 0 10px 20px;
+  color: #C5C7CB;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 500;
+}
+.index .aside .nav a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.index .aside .nav a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+}
+.index .aside .nav a .choose {
+  display: none;
+}
+.index .aside .nav a span {
+  color: #C5C7CB;
+}
+.index .aside .nav a:hover {
+  background: #FAFBFC;
+}
+.index .aside .nav .router-link-active {
+  background: #FAFBFC;
+}
+.index .aside .nav .router-link-active span {
+  color: #20222D;
+}
+.index .aside .nav .router-link-active .default {
+  display: none;
+}
+.index .aside .nav .router-link-active .choose {
+  display: inline-block;
+}
+.index .el-header {
+  padding: 0;
+}
+.index .head {
+  height: 60px;
+  padding: 0 40px;
+  box-shadow: 0 1px 9px 0 rgba(203, 208, 228, 0.2);
+}
+.index .head .search-box {
+  width: 480px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.index .head .search-box input {
+  width: 420px;
+  height: 42px;
+  border: none;
+}
+.index .head .search-box input:focus {
+  outline: none;
+}
+.index .head .search-box .search-btn {
+  width: 36px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #F8F9FD;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+.index .head .search-box .search-btn img {
+  width: 14px;
+}
+.index .head .user {
+  width: 182px;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+}
+.index .head .user .user-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.index .head .user span {
+  display: block;
+  width: 120px;
+  color: #4C5155;
+  font-size: 14px;
+}
+.index .head .user img {
+  width: 6px;
+  transform: rotate(180deg);
+}
+.index .head .user ul {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 10px 20px 6px rgba(0, 0, 0, 0.03);
+  display: none;
+}
+.index .head .user ul li {
+  width: 100px;
+  line-height: 40px;
+  color: #FF6556;
+  font-size: 16px;
+}
+.index .head .user:hover ul {
+  display: block;
 }

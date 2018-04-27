@@ -11,6 +11,10 @@ body{
   background-size: cover;
   background-position: center;
 }
+input::-webkit-input-placeholder{
+  color: #C5C7CB;
+  font-size: 14px;
+}
 .login{
   width: 700px;
   height: 330px;
@@ -244,8 +248,136 @@ body{
   }
 }
 .index{
-  text-align: center;
-  img{
-    width: 500px;
+  min-width: 1200px;
+  .aside{
+    border-right: 1px solid rgba(0,0,0,0.08);
+    padding-bottom: 200px;
+    .logo{
+      height: 60px;
+      line-height: 60px;
+      padding-left: 20px;
+      img{
+        width: 137px;
+        height: 24px;
+      }
+    }
+    .nav{
+      h5{
+        margin: 20px 0 10px 20px;
+        color: #C5C7CB;
+        font-size: 12px;
+        line-height: 13px;
+        font-weight: 500;
+      }
+      a{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        text-decoration: none;
+        img{
+          width: 20px;
+          height: 20px;
+          margin-right: 24px;
+        }
+        .choose{
+          display: none;
+        }
+        span{
+          color: #C5C7CB;
+        }
+      }
+      a:hover{
+        background: #FAFBFC;
+      }
+      .router-link-active{
+        background: #FAFBFC;
+        span{
+          color: #20222D;
+        }
+        .default{
+          display: none;
+        }
+        .choose{
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .el-header{
+    padding: 0;
+  }
+  .head{
+    height: 60px;
+    padding: 0 40px;
+    box-shadow: 0 1px 9px 0 rgba(203,208,228,0.2);
+    .search-box{
+      width: 480px;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      input{
+        width: 420px;
+        height: 42px;
+        border: none;
+      }
+      input:focus{
+        outline: none;
+      }
+      .search-btn{
+        width: 36px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: #F8F9FD;
+        text-align: center;
+        line-height: 24px;
+        cursor: pointer;
+        img{
+          width: 14px;
+        }
+      }
+    }
+    .user{
+      width: 182px;
+      height: 60px;
+      cursor: pointer;
+      position: relative;
+      .user-img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+      }
+      span{
+        display: block;
+        width: 120px;
+        color: #4C5155;
+        font-size: 14px;
+      }
+      img{
+        width: 6px;
+        transform: rotate(180deg);
+      }
+      ul{
+        position: absolute;
+        right: 0;
+        top: 60px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        box-shadow: 0 10px 20px 6px rgba(0, 0, 0, 0.03);
+        display: none;
+        li{
+          width: 100px;
+          line-height: 40px;
+          color: #FF6556;
+          font-size: 16px;
+        }
+      }
+    }
+    .user:hover{
+      ul{
+        display: block;
+      }
+    }
   }
 }

@@ -26,5 +26,19 @@
       "success": "Copy Success",
       "fail": "Copy Failed"
     }
+  },
+  "aside":{
+    "menu": "Menu",
+    "home": "Home",
+    "account": "My Account",
+    "forging": "Block Forging",
+    "listing": "Block Listing",
+    "vote": "Vote",
+    "transfer": "Transfer",
+    "peers": "Peers"
+  },
+  "head": {
+    "placeholder": "Find address/delegate/block/transitation",
+    "signOut": "Sign out"
   }
 }
