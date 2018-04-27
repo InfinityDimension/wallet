@@ -246,6 +246,11 @@ input::-webkit-input-placeholder {
 .index {
   min-width: 1200px;
 }
+.index ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .index .aside {
   border-right: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 200px;
@@ -357,11 +362,9 @@ input::-webkit-input-placeholder {
   position: absolute;
   right: 0;
   top: 60px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   text-align: center;
   box-shadow: 0 10px 20px 6px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
   display: none;
 }
 .index .head .user ul li {
@@ -372,4 +375,64 @@ input::-webkit-input-placeholder {
 }
 .index .head .user:hover ul {
   display: block;
+}
+.el-main {
+  padding: 40px;
+  background-color: #FAFBFC;
+}
+.home .survey li {
+  width: 30%;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.home .survey li div {
+  padding-left: 24px;
+}
+.home .survey li h5,
+.home .survey li h2,
+.home .survey li p {
+  margin: 0;
+  font-weight: 500;
+}
+.home .survey li h5 {
+  font-size: 16px;
+  color: #20222D;
+  line-height: 18px;
+}
+.home .survey li h2 {
+  font-size: 30px;
+  color: #1B76FF;
+  margin: 12px 0 16px 0;
+  line-height: 34px;
+}
+.home .survey li p {
+  font-size: 14px;
+  color: #C5C7CB;
+  line-height: 16px;
+}
+.home .survey li img {
+  width: 76px;
+}
+.home .title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 40px 0 25px;
+  color: #4C5155;
+  font-weight: 500;
+}
+.home .my-transactions {
+  background-color: #fff;
+  padding: 15px 15px 30px 15px;
+}
+.home .my-transactions .el-tabs__active-bar {
+  width: 50px !important;
+}
+.home .my-transactions .el-tabs__item {
+  color: #C5C7CB;
+  line-height: 64px;
+  height: 64px;
+}
+.home .my-transactions .is-active {
+  color: #3291FF;
 }

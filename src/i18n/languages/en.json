@@ -40,5 +40,18 @@
   "head": {
     "placeholder": "Find address/delegate/block/transitation",
     "signOut": "Sign out"
+  },
+  "home": {
+    "survey": {
+      "balance": "Balance",
+      "lastHeight": "Last Block Height",
+      "version": "Version"
+    },
+    "transactions": "My Transactions",
+    "tab": {
+      "all": "All",
+      "sent": "Sent",
+      "received": "Received"
+    }
   }
 }

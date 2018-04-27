@@ -40,5 +40,18 @@
   "head": {
     "placeholder": "查找 地址/委托/块/传输",
     "signOut": "退出"
+  },
+  "home": {
+    "survey": {
+      "balance": "资产",
+      "lastHeight": "最新块高度",
+      "version": "版本"
+    },
+    "transactions": "我的交易",
+    "tab": {
+      "all": "所有",
+      "sent": "发送",
+      "received": "接收"
+    }
   }
 }

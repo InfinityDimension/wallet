@@ -11,6 +11,7 @@ const Listing = () => import('@/views/listing/listing');
 const Vote = () => import('@/views/vote/vote');
 const Transfer = () => import('@/views/transfer/transfer');
 const Peers = () => import('@/views/peers/peers');
+const Error = () => import('@/views/error/error');
 
 Vue.use(Router);
 
@@ -75,6 +76,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: Register
+    },
+    {
+      path: '*',
+      name: 'error',
+      component: Error
     }
   ]
 })
