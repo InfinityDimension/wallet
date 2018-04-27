@@ -130,6 +130,7 @@ body {
 .login .sub-box button:last-child {
   background: #3291FF;
   color: #fff;
+  margin-left: 12px;
 }
 .register {
   width: 700px;
