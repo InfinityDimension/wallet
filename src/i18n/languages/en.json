@@ -1,0 +1,30 @@
+{
+  "login": {
+    "language": {
+      "en": "English",
+      "cn": "Chinese"
+    },
+    "placeholder": "Enter your master secret",
+    "error": "Invalid secret",
+    "keep": "Keep Login",
+    "new": "NEW ACOUNT",
+    "sub": "LOG IN"
+  },
+  "register": {
+    "step1": {
+      "tab": "Step1: Generate a Secret",
+      "btn1": "SAVE SECRET",
+      "btn2": "NEXT"
+    },
+    "step2": {
+      "tab": "Step2: Confirm your Secret",
+      "btn1": "BACK",
+      "btn2": "CONFIRM"
+    },
+    "info": "Make sure that you keep the passphrase safe. You will be asked to re-type it for confirmation.",
+    "copy": {
+      "success": "Copy Success",
+      "fail": "Copy Failed"
+    }
+  }
+}
