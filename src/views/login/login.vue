@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="text-box">
-      <textarea name="" :placeholder="$t('login.placeholder')" v-model="password"></textarea>
+      <textarea name="" v-show="see === 1" :placeholder="$t('login.placeholder')" v-model="password"></textarea>
+      <input type="password" v-show="see === 2" :placeholder="$t('login.placeholder')" v-model="password">
       <img :src="'/static/img/password-see'+see+'.png'" @click="seePassword" alt="">
     </div>
     <div class="error-box">

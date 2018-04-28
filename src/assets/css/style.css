@@ -77,6 +77,32 @@ input::-webkit-input-placeholder {
 }
 .login .text-box {
   position: relative;
+  height: 100px;
+  margin-top: 30px;
+  border: 1px solid #C5C7CB;
+  border-radius: 4px;
+}
+.login .text-box input {
+  width: 100%;
+  font-family: Ubuntu;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px;
+}
+.login .text-box input:focus,
+.login .text-box textarea:focus {
+  outline: none;
+}
+.login .text-box input:-webkit-autofill,
+.login .text-box textarea:-webkit-autofill,
+.login .text-box select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+.login .text-box input[type=text]:focus,
+.login .text-box input[type=password]:focus,
+.login .text-box textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff  inset;
 }
 .login .text-box img {
   width: 20px;
@@ -89,10 +115,9 @@ input::-webkit-input-placeholder {
 .login textarea {
   width: 100%;
   height: 100px;
-  margin-top: 30px;
   font-family: Ubuntu;
   padding: 20px;
-  border: 1px solid #C5C7CB;
+  border: none;
   border-radius: 4px;
   resize: none;
   font-size: 14px;
@@ -243,8 +268,13 @@ input::-webkit-input-placeholder {
   background: #3291FF;
   color: #fff;
 }
+@media all and (max-width: 1160px) {
+  .index .aside {
+    width: 56px !important;
+  }
+}
 .index {
-  min-width: 1280px;
+  min-width: 1000px;
 }
 .index ul {
   list-style: none;
@@ -254,6 +284,8 @@ input::-webkit-input-placeholder {
 .index .aside {
   border-right: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 200px;
+  overflow: hidden;
+  transition: .3s;
 }
 .index .aside .logo {
   height: 60px;
@@ -265,7 +297,7 @@ input::-webkit-input-placeholder {
   height: 24px;
 }
 .index .aside .nav h5 {
-  margin: 20px 0 10px 20px;
+  margin: 20px 0 10px 16px;
   color: #C5C7CB;
   font-size: 12px;
   line-height: 13px;
@@ -289,6 +321,7 @@ input::-webkit-input-placeholder {
 }
 .index .aside .nav a span {
   color: #C5C7CB;
+  white-space: nowrap;
 }
 .index .aside .nav a:hover {
   background: #FAFBFC;

@@ -76,6 +76,27 @@ input::-webkit-input-placeholder{
   }
   .text-box{
     position: relative;
+    height: 100px;
+    margin-top: 30px;
+    border: 1px solid #C5C7CB;
+    border-radius: 4px;
+    input{
+      width: 100%;
+      font-family:Ubuntu;
+      padding: 20px;
+      box-sizing: border-box;
+      border: none;
+      font-size: 14px;
+    }
+    input:focus,textarea:focus{
+      outline: none;
+    }
+    input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    }
+    input[type=text]:focus,input[type=password]:focus, textarea:focus {
+      -webkit-box-shadow: 0 0 0 1000px #fff  inset;
+    }
     img{
       width: 20px;
       height: 20px;
@@ -88,10 +109,9 @@ input::-webkit-input-placeholder{
   textarea{
     width: 100%;
     height: 100px;
-    margin-top: 30px;
     font-family:Ubuntu;
     padding: 20px;
-    border: 1px solid #C5C7CB;
+    border: none;
     border-radius: 4px;
     resize: none;
     font-size: 14px;
@@ -247,8 +267,13 @@ input::-webkit-input-placeholder{
     }
   }
 }
+@media all and (max-width: 1160px) {
+  .index .aside{
+    width: 56px !important;
+  }
+}
 .index{
-  min-width: 1280px;
+  min-width: 1000px;
   ul{
     list-style: none;
     margin: 0;
@@ -257,6 +282,8 @@ input::-webkit-input-placeholder{
   .aside{
     border-right: 1px solid rgba(0,0,0,0.08);
     padding-bottom: 200px;
+    overflow: hidden;
+    transition: .3s;
     .logo{
       height: 60px;
       line-height: 60px;
@@ -268,7 +295,7 @@ input::-webkit-input-placeholder{
     }
     .nav{
       h5{
-        margin: 20px 0 10px 20px;
+        margin: 20px 0 10px 16px;
         color: #C5C7CB;
         font-size: 12px;
         line-height: 13px;
@@ -291,6 +318,7 @@ input::-webkit-input-placeholder{
         }
         span{
           color: #C5C7CB;
+          white-space: nowrap;
         }
       }
       a:hover{

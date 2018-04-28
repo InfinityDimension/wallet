@@ -1,19 +1,17 @@
 <template>
   <div class="home-table">
     <el-table
-      :data="allTableData"
+      :data="tableData"
       stripe
       style="width: 100%"
       fit>
       <el-table-column
         prop="id"
-        :label="$t('homeTable.th1')"
-        width="150">
+        :label="$t('homeTable.th1')">
       </el-table-column>
       <el-table-column
         prop="time"
-        :label="$t('homeTable.th2')"
-        width="160">
+        :label="$t('homeTable.th2')">
       </el-table-column>
       <el-table-column
         prop="sender"
@@ -47,7 +45,7 @@
 
         }
     },
-    props:['allTableData']
+    props:['tableData']
   }
 </script>
 
@@ -60,10 +58,16 @@
     .el-table th>.cell{
       color: #C5C7CB;
       font-weight: 500;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
     }
     .el-table td>.cell{
       color: #4C5155;
       font-weight: 500;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
     }
     .el-table td:nth-child(1)>.cell{
        color: #3291FF;

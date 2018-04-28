@@ -30,14 +30,14 @@
     <div class="my-transactions">
       <el-tabs v-model="activeName">
         <el-tab-pane :label="$t('home.tab.all')" name="first">
-          <homeTable :allTableData="allData"></homeTable>
-          <div class="more">{{ $t("home.more") }}</div>
+          <homeTable :tableData="allData"></homeTable>
+          <div class="more" @click="allMore">{{ $t("home.more") }}</div>
         </el-tab-pane>
         <el-tab-pane :label="$t('home.tab.sent')" name="second">
-          tab页2
+          <homeTable :tableData="sentData"></homeTable>
         </el-tab-pane>
         <el-tab-pane :label="$t('home.tab.received')" name="third">
-          tab页3
+          <homeTable :tableData="receivedData"></homeTable>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -52,30 +52,62 @@ export default {
     return {
       activeName: 'first', //默认第一个tab
       allData: [{
-        id: '6421980…18sdsad',
+        id: '6421980538sdsad',
         time: '2018/01/13 17:44:47',
-        sender: '674857…22007',
-        recipient: '674457…22007',
+        sender: '67485743222007',
+        recipient: '67445743222007',
         amount: '499.12345678',
         fee: '0.10000000',
         confirmations: '7'
       },{
-        id: '6421980…18sdsad',
+        id: '64218012318sad',
         time: '2018/01/13 17:44:47',
-        sender: '674857…22007',
-        recipient: '674457…22007',
+        sender: '67485731222007',
+        recipient: '674457321422007',
         amount: '499.12345678',
         fee: '0.10000000',
         confirmations: '7'
       },{
-        id: '6421980…18sdsad',
+        id: '642198043218sdd',
         time: '2018/01/13 17:44:47',
-        sender: '674857…22007',
-        recipient: '674457…22007',
+        sender: '67485712422007',
+        recipient: '67445754322007',
         amount: '499.12345678',
         fee: '0.10000000',
         confirmations: '7'
+      }],
+      sentData: [{
+        id: '65443243218sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '67485743222007',
+        recipient: '67445731222007',
+        amount: '998.12345678',
+        fee: '0.10000000',
+        confirmations: '4'
+      }],
+      receivedData: [{
+        id: '32432313118sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '67485743222007',
+        recipient: '67445743222007',
+        amount: '453.12345678',
+        fee: '0.10000000',
+        confirmations: '3'
       }]
+    }
+  },
+  methods: {
+    allMore(){
+      let newData = {
+        id: '3243231…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '453.12345678',
+        fee: '0.10000000',
+        confirmations: '3'
+      };
+      this.allData.push(newData);
     }
   },
   components:{

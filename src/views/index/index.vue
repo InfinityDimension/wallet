@@ -75,7 +75,7 @@ export default {
   name: 'index',
   data () {
     return {
-
+      navWidth: '' //导航默认宽度
     }
   },
   beforeCreate(){

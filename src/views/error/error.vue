@@ -1,12 +1,15 @@
 <template>
     <div>
-      <h1>404</h1>
+
     </div>
 </template>
 
 <script>
 export default {
-    name: "error"
+  name: "error",
+  beforeCreate () {
+    document.querySelector('body').setAttribute('style', 'background-image: url(/static/img/404.jpg);background-size: cover;');
+  }
 }
 </script>
 
