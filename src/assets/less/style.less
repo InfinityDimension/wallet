@@ -305,6 +305,7 @@ input::-webkit-input-placeholder{
         display: flex;
         align-items: center;
         height: 50px;
+        min-width: 200px;
         line-height: 50px;
         padding-left: 20px;
         text-decoration: none;
@@ -384,6 +385,9 @@ input::-webkit-input-placeholder{
         width: 120px;
         color: #4C5155;
         font-size: 14px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
       }
       img{
         width: 6px;

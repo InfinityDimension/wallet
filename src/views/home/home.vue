@@ -35,9 +35,11 @@
         </el-tab-pane>
         <el-tab-pane :label="$t('home.tab.sent')" name="second">
           <homeTable :tableData="sentData"></homeTable>
+          <div class="more" @click="sentMore">{{ $t("home.more") }}</div>
         </el-tab-pane>
         <el-tab-pane :label="$t('home.tab.received')" name="third">
           <homeTable :tableData="receivedData"></homeTable>
+          <div class="more" @click="receivedMore">{{ $t("home.more") }}</div>
         </el-tab-pane>
       </el-tabs>
     </div>
@@ -108,6 +110,30 @@ export default {
         confirmations: '3'
       };
       this.allData.push(newData);
+    },
+    sentMore(){
+      let newData = {
+        id: '3243231…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '453.12345678',
+        fee: '0.10000000',
+        confirmations: '3'
+      };
+      this.sentData.push(newData);
+    },
+    receivedMore(){
+      let newData = {
+        id: '3243231…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '453.12345678',
+        fee: '0.10000000',
+        confirmations: '3'
+      };
+      this.receivedData.push(newData);
     }
   },
   components:{

@@ -55,7 +55,7 @@
             </div>
             <div class="user flex">
               <div class="imgbg user-img" :style="{backgroundImage:'url(/static/img/head.png)'}"></div>
-              <span>145124…023176S</span>
+              <span>14512322023176S</span>
               <img src="/static/img/arrow-up.png" alt="">
               <ul>
                 <li @click="signOut">{{ $t('head.signOut') }}</li>
@@ -75,7 +75,7 @@ export default {
   name: 'index',
   data () {
     return {
-      navWidth: '' //导航默认宽度
+
     }
   },
   beforeCreate(){
