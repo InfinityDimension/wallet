@@ -86,5 +86,21 @@
       "prompt": "确保你把第二个秘密保存在一个安全的地方。如果你失去了它，你将无法在系统中收回你的资产。当您重置第二个密码时，您将在HTC中收费",
       "submit": "提交"
     }
+  },
+  "delegate": {
+    "title": "Delegate",
+    "noDelegate": {
+      "prompt": "To become a delegate, click on the \"Delegate Registration\" button.",
+      "registerBtn": "Delegate Registration"
+    },
+    "register": {
+      "title": "Register as a Delegate",
+      "prompt": "Becoming a delegate requires registration. You may choose your own delegate name, which can be used to promote your delegate. Only the top 101 delegates are eligible to forge. All fees are shared equally between the top 101 delegates.",
+      "name": "Name",
+      "placeholder": "Please choose a delegate name",
+      "spend": "Register requires 0.1 HTC",
+      "cancel": "CANCEL",
+      "register": "REGISTER"
+    }
   }
 }

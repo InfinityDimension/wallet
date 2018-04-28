@@ -592,3 +592,87 @@ textarea:focus {
   margin-top: 30px;
   cursor: pointer;
 }
+.forging h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 25px 0;
+  color: #4C5155;
+  font-weight: 500;
+}
+.forging .no-delegate {
+  text-align: center;
+  background: #fff;
+  padding: 100px 0 78px;
+}
+.forging .no-delegate img {
+  width: 100px;
+}
+.forging .no-delegate p {
+  color: #4C5155;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 40px 0 60px;
+}
+.forging .no-delegate button {
+  width: 250px;
+  height: 54px;
+  color: #fff;
+  box-shadow: 0 2px 7px 0 rgba(120, 137, 149, 0.25);
+  border-radius: 4px;
+  background: #3291FF;
+  border: none;
+}
+.forging .delegate-register .el-dialog__headerbtn {
+  display: none;
+}
+.forging .delegate-register .el-dialog__header {
+  text-align: center;
+  padding: 30px 20px 20px 20px;
+}
+.forging .delegate-register .el-dialog__body {
+  padding: 0 40px;
+}
+.forging .delegate-register .el-dialog__body p {
+  margin: 0;
+  line-height: 18px;
+  color: #C5C7CB;
+}
+.forging .delegate-register .el-dialog__body h5 {
+  margin: 40px 0 10px 0;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.forging .delegate-register .el-dialog__body input {
+  width: 400px;
+  height: 56px;
+  border-radius: 4px;
+  border: 1px solid #C5C7CB;
+  text-indent: 20px;
+  font-family: Ubuntu;
+}
+.forging .delegate-register .el-dialog__footer {
+  padding: 8px 40px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.forging .delegate-register .el-dialog__footer .spend {
+  position: absolute;
+  left: 40px;
+  line-height: 54px;
+  top: 8px;
+  color: #FF6556;
+  font-size: 14px;
+}
+.forging .delegate-register .el-dialog__footer button {
+  height: 54px;
+}
+.forging .delegate-register .el-dialog__footer .el-button--primary {
+  width: 150px;
+  background: #3291FF;
+}
+.forging .delegate-register .el-dialog__footer .el-button--default {
+  border: none;
+  color: #C5C7CB;
+}
