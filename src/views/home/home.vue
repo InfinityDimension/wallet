@@ -31,9 +31,14 @@
       <el-tabs v-model="activeName">
         <el-tab-pane :label="$t('home.tab.all')" name="first">
           <homeTable :allTableData="allData"></homeTable>
+          <div class="more">{{ $t("home.more") }}</div>
         </el-tab-pane>
-        <el-tab-pane :label="$t('home.tab.sent')" name="second">配置管理</el-tab-pane>
-        <el-tab-pane :label="$t('home.tab.received')" name="third">角色管理</el-tab-pane>
+        <el-tab-pane :label="$t('home.tab.sent')" name="second">
+          tab页2
+        </el-tab-pane>
+        <el-tab-pane :label="$t('home.tab.received')" name="third">
+          tab页3
+        </el-tab-pane>
       </el-tabs>
     </div>
   </div>
@@ -47,21 +52,29 @@ export default {
     return {
       activeName: 'first', //默认第一个tab
       allData: [{
-        date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
-      }, {
-        date: '2016-05-04',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄'
-      }, {
-        date: '2016-05-01',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄'
-      }, {
-        date: '2016-05-03',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄'
+        id: '6421980…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '499.12345678',
+        fee: '0.10000000',
+        confirmations: '7'
+      },{
+        id: '6421980…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '499.12345678',
+        fee: '0.10000000',
+        confirmations: '7'
+      },{
+        id: '6421980…18sdsad',
+        time: '2018/01/13 17:44:47',
+        sender: '674857…22007',
+        recipient: '674457…22007',
+        amount: '499.12345678',
+        fee: '0.10000000',
+        confirmations: '7'
       }]
     }
   },

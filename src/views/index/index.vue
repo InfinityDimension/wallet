@@ -58,7 +58,7 @@
               <span>145124…023176S</span>
               <img src="/static/img/arrow-up.png" alt="">
               <ul>
-                <li>{{ $t('head.signOut') }}</li>
+                <li @click="signOut">{{ $t('head.signOut') }}</li>
               </ul>
             </div>
           </div>
@@ -70,6 +70,7 @@
 </template>
 
 <script>
+  import {handleLocalStorage} from '../../utils/util'
 export default {
   name: 'index',
   data () {
@@ -81,7 +82,10 @@ export default {
     document.querySelector('body').removeAttribute('style');
   },
   methods: {
-
+    signOut(){
+      handleLocalStorage('remove','login');
+      this.$router.push({path: '/login'})
+    }
   }
 }
 </script>

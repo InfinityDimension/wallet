@@ -52,6 +52,16 @@
       "all": "All",
       "sent": "Sent",
       "received": "Received"
-    }
+    },
+    "more": "More"
+  },
+  "homeTable": {
+    "th1": "ID",
+    "th2": "Timestamp",
+    "th3": "Sender",
+    "th4": "Recipient",
+    "th5": "Amount(HTC)",
+    "th6": "Fee(HTC)",
+    "th7": "Confirmations"
   }
 }
