@@ -48,7 +48,9 @@
         <el-header>
           <div class="head flex">
             <div class="search-box flex">
-              <input type="text" :placeholder="$t('head.placeholder')">
+              <input type="text" :placeholder="$t('head.placeholder')" v-model="search" />
+              <!--下面input阻止浏览器自动填充密码-->
+              <input type="text" class="hide-input" />
               <div class="search-btn">
                 <img src="/static/img/head-search.png" alt="">
               </div>
@@ -75,7 +77,7 @@ export default {
   name: 'index',
   data () {
     return {
-
+      search: '' //搜索内容
     }
   },
   beforeCreate(){

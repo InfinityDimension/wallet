@@ -63,5 +63,28 @@
     "th5": "Amount(HTC)",
     "th6": "Fee(HTC)",
     "th7": "Confirmations"
+  },
+  "account": {
+    "title": "Account Information",
+    "tab": {
+      "info": "General Info",
+      "secret": "Second Secret"
+    },
+    "info": {
+      "name1": "Total Balance:",
+      "name2": "Address:",
+      "name3": "Second Secret:",
+      "prompt": "Not set yet",
+      "name4": "Public Key:"
+    },
+    "secret": {
+      "title": "Set second secret",
+      "name1": "Secret",
+      "placeholder1": "Second secret must be from 8 to 16 alphanumeric characters ",
+      "name2": "Confirm",
+      "placeholder2": "Enter again",
+      "prompt": "Make sure you have saved your second secret in a safe place. If you lost it, you will not be able to recover your assets in system. You will be charged in HTC when you reset the second password.",
+      "submit": "SUBMIT"
+    }
   }
 }

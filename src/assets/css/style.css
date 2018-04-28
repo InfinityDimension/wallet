@@ -15,6 +15,16 @@ input::-webkit-input-placeholder {
   color: #C5C7CB;
   font-size: 14px;
 }
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff  inset;
+}
 .login {
   width: 700px;
   height: 330px;
@@ -93,16 +103,6 @@ input::-webkit-input-placeholder {
 .login .text-box input:focus,
 .login .text-box textarea:focus {
   outline: none;
-}
-.login .text-box input:-webkit-autofill,
-.login .text-box textarea:-webkit-autofill,
-.login .text-box select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #fff inset;
-}
-.login .text-box input[type=text]:focus,
-.login .text-box input[type=password]:focus,
-.login .text-box textarea:focus {
-  -webkit-box-shadow: 0 0 0 1000px #fff  inset;
 }
 .login .text-box img {
   width: 20px;
@@ -304,18 +304,18 @@ input::-webkit-input-placeholder {
   font-weight: 500;
 }
 .index .aside .nav a {
-  display: flex;
-  align-items: center;
+  display: block;
   height: 50px;
-  min-width: 200px;
   line-height: 50px;
   padding-left: 20px;
+  overflow: hidden;
   text-decoration: none;
 }
 .index .aside .nav a img {
   width: 20px;
   height: 20px;
   margin-right: 24px;
+  vertical-align: middle;
 }
 .index .aside .nav a .choose {
   display: none;
@@ -323,6 +323,7 @@ input::-webkit-input-placeholder {
 .index .aside .nav a span {
   color: #C5C7CB;
   white-space: nowrap;
+  vertical-align: middle;
 }
 .index .aside .nav a:hover {
   background: #FAFBFC;
@@ -358,6 +359,10 @@ input::-webkit-input-placeholder {
 }
 .index .head .search-box input:focus {
   outline: none;
+}
+.index .head .search-box .hide-input {
+  width: 0;
+  height: 0;
 }
 .index .head .search-box .search-btn {
   width: 36px;
@@ -481,5 +486,109 @@ input::-webkit-input-placeholder {
   text-align: center;
   color: #1B76FF;
   margin: 30px auto 0 auto;
+  cursor: pointer;
+}
+.account h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 25px 0;
+  color: #4C5155;
+  font-weight: 500;
+}
+.account .tab-box {
+  background: #fff;
+  padding: 15px 20px 0 20px;
+}
+.account .tab-box .el-tabs__active-bar {
+  width: 50px !important;
+}
+.account .tab-box .el-tabs__item {
+  color: #C5C7CB;
+  line-height: 64px;
+  height: 64px;
+}
+.account .tab-box .is-active {
+  color: #3291FF;
+}
+.account .tab-box .info li {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  line-height: 56px;
+  color: #4C5155;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.account .tab-box .info li span {
+  vertical-align: middle;
+}
+.account .tab-box .info li img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.account .tab-box .info li .name {
+  width: 135px;
+  color: #8C8C8C;
+}
+.account .tab-box .info li .balance {
+  color: #3291FF;
+}
+.account .tab-box .info li .prompt {
+  color: #C5C7CB;
+}
+.account .tab-box .info li:last-child {
+  border-bottom: none;
+}
+.account .tab-box .secret {
+  padding-bottom: 30px;
+}
+.account .tab-box .secret h5 {
+  font-size: 16px;
+  color: #4C5155;
+  margin: 0;
+  padding: 10px 0;
+  line-height: 18px;
+  font-weight: 500;
+}
+.account .tab-box .secret h6 {
+  font-weight: 500;
+  color: #8C8C8C;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0 10px;
+}
+.account .tab-box .secret input {
+  width: 500px;
+  height: 56px;
+  border: 1px solid #C5C7CB;
+  border-radius: 4px;
+  text-indent: 20px;
+  font-family: Ubuntu;
+}
+.account .tab-box .secret p {
+  color: #C5C7CB;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 20px 0 30px;
+}
+.account .tab-box .secret button {
+  width: 250px;
+  height: 54px;
+  background: #3291ff;
+  box-shadow: 0 2px 7px 0 rgba(120, 137, 149, 0.25);
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+.account .sign-out {
+  line-height: 50px;
+  background: #fff;
+  color: #FF6556;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-top: 30px;
   cursor: pointer;
 }
