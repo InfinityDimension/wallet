@@ -1,6 +1,6 @@
 <template>
     <div class="peers">
-      <h3>peerList</h3>
+      <h3 class="title">{{ $t("peers.title") }}</h3>
       <peerTable :tableData="peerData"></peerTable>
     </div>
 </template>

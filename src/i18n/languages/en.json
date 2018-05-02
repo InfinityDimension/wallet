@@ -127,6 +127,16 @@
   "listing": {
     "title": "Latest Block"
   },
+  "vote": {
+    "title": "Vote",
+    "view": {
+      "prompt": "View Selection",
+      "btn": "VOTE"
+    },
+    "search": {
+      "placeholder": "Search Delegates"
+    }
+  },
   "transfer": {
     "title": "New Transfer",
     "form": {
@@ -149,5 +159,8 @@
     "th5": "Version",
     "th6": "Platform",
     "th7": "Height"
+  },
+  "peers": {
+    "title": "Peer List"
   }
 }
