@@ -140,5 +140,14 @@
     },
     "prompt": "Please make sure you send XAS to the correct address. This operation cannot be cancelled.",
     "send": "SEND"
+  },
+  "peerTable": {
+    "th1": "IP Address",
+    "th2": "Port",
+    "th3": "Hostname",
+    "th4": "Status",
+    "th5": "Version",
+    "th6": "Platform",
+    "th7": "Height"
   }
 }
