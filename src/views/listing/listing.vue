@@ -3,7 +3,7 @@
       <h3>{{ $t("listing.title") }}</h3>
       <div class="table">
         <blockTable :tableData="blockData"></blockTable>
-        <pagination></pagination>
+        <pagination @pageChange="getPageData"></pagination>
       </div>
     </div>
 </template>
@@ -40,6 +40,11 @@ export default {
         amount: '499.12345678',
         forged: '4.1'
       }]
+    }
+  },
+  methods: {
+    getPageData(val){
+      console.log('接收到的分页：'+val)
     }
   },
   components:{

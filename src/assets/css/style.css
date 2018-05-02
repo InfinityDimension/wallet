@@ -731,3 +731,68 @@ textarea:focus {
 .listing .table {
   background: #fff;
 }
+.transfer h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 25px 0;
+  color: #4C5155;
+  font-weight: 500;
+}
+.transfer .transfer-box {
+  background: #fff;
+  padding: 20px 20px 30px 20px;
+}
+.transfer .transfer-box h5 {
+  margin: 20px 0 10px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #8C8C8C;
+}
+.transfer .transfer-box input {
+  width: 500px;
+  height: 56px;
+  border: 1px solid #C5C7CB;
+  border-radius: 4px;
+  text-indent: 20px;
+  font-size: 14px;
+}
+.transfer .transfer-box input:disabled {
+  background: #F5F6FA;
+}
+.transfer .transfer-box p {
+  color: #C5C7CB;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0 30px;
+}
+.transfer .transfer-box button {
+  width: 250px;
+  height: 54px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background: #3291FF;
+}
+.transfer .transfer-box .form .input-box {
+  position: relative;
+}
+.transfer .transfer-box .form .input-box span {
+  color: #FF6556;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.transfer .transfer-box .form .input-box img {
+  width: 14px;
+  margin: 0 6px 0 16px;
+  vertical-align: middle;
+}
+.transfer .transfer-box .form .input-box label {
+  position: absolute;
+  color: #4C5155;
+  font-size: 14px;
+  top: 0;
+  line-height: 60px;
+  left: 450px;
+  z-index: 10;
+}

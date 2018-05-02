@@ -11,7 +11,8 @@
       </el-table-column>
       <el-table-column
         prop="time"
-        :label="$t('homeTable.th2')">
+        :label="$t('homeTable.th2')"
+        min-width="114">
       </el-table-column>
       <el-table-column
         prop="sender"

@@ -3,14 +3,20 @@
     <el-pagination
       background
       layout="prev, pager, next"
-      :total="1000">
+      :total="1000"
+      @current-change="pageChange">
     </el-pagination>
   </div>
 </template>
 
 <script>
 export default {
-  name: "pagination"
+  name: "pagination",
+  methods: {
+    pageChange(val){
+      this.$emit('pageChange',val);
+    }
+  }
 }
 </script>
 

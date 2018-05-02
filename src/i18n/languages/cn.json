@@ -126,5 +126,19 @@
   },
   "listing": {
     "title": "最新区块"
+  },
+  "transfer": {
+    "title": "新转移",
+    "form": {
+      "recipient": "接收者",
+      "recipientErr": "空接收者",
+      "recipientPlaceholder": "输入接收者的地址",
+      "amount": "数量",
+      "amountErr": "空数量",
+      "amountPlaceholder": "输入数量",
+      "fee": "价格"
+    },
+    "prompt": "请确保把XAS发送到正确的地址，无法取消此操作。",
+    "send": "发送"
   }
 }

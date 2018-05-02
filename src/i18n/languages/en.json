@@ -126,5 +126,19 @@
   },
   "listing": {
     "title": "Latest Block"
+  },
+  "transfer": {
+    "title": "New Transfer",
+    "form": {
+      "recipient": "Recipient",
+      "recipientErr": "Empty recipient",
+      "recipientPlaceholder": "Enter the recipient address that you would like to send",
+      "amount": "Amount",
+      "amountErr": "Empty amount",
+      "amountPlaceholder": "Enter amount",
+      "fee": "Fee"
+    },
+    "prompt": "Please make sure you send XAS to the correct address. This operation cannot be cancelled.",
+    "send": "SEND"
   }
 }
