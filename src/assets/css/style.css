@@ -676,3 +676,58 @@ textarea:focus {
   border: none;
   color: #C5C7CB;
 }
+.forging .delegate-info .base-info {
+  background: #fff;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.forging .delegate-info .base-info li {
+  padding: 0 20px;
+}
+.forging .delegate-info .base-info li span {
+  color: #4C5155;
+  font-size: 16px;
+}
+.forging .delegate-info .base-info li .name {
+  color: #C5C7CB;
+}
+.forging .forging-info {
+  background: #fff;
+  height: 160px;
+  margin-bottom: 40px;
+}
+.forging .forging-info li {
+  text-align: center;
+  width: 25%;
+  height: 110px;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+.forging .forging-info li h5 {
+  font-size: 16px;
+  color: #4C5155;
+  line-height: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+.forging .forging-info li span {
+  display: block;
+  margin-top: 42px;
+  color: #3291FF;
+  font-size: 30px;
+}
+.forging .forging-info li .el-progress {
+  margin-top: 20px;
+}
+.forging .forging-info li:last-child {
+  border-right: none;
+}
+.listing h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 25px 0;
+  color: #4C5155;
+  font-weight: 500;
+}
+.listing .table {
+  background: #fff;
+}
