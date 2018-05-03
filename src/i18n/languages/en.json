@@ -64,6 +64,10 @@
     "th6": "Fee(HTC)",
     "th7": "Confirmations"
   },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next"
+  },
   "account": {
     "title": "Account Information",
     "tab": {

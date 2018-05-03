@@ -3,6 +3,8 @@
     <el-pagination
       background
       layout="prev, pager, next"
+      :prev-text="$t('pagination.prev')"
+      :next-text="$t('pagination.next')"
       :total="1000"
       @current-change="pageChange">
     </el-pagination>
@@ -29,8 +31,9 @@ export default {
   .el-pagination.is-background{
     .btn-prev,.btn-next{
       margin: 0;
-      width: 40px;
+      width: auto;
       height: 40px;
+      padding: 0 6px;
       color: #1B76FF;
       background: #fff;
       border: 1px solid #EAEAEA;

@@ -64,6 +64,10 @@
     "th6": "费用(HTC)",
     "th7": "确认"
   },
+  "pagination": {
+    "prev": "上一页",
+    "next": "下一页"
+  },
   "account": {
     "title": "钱包信息",
     "tab": {
@@ -126,6 +130,49 @@
   },
   "listing": {
     "title": "最新区块"
+  },
+  "vote": {
+    "title": "投票",
+    "view": {
+      "prompt": "查看选择",
+      "btn": "投票"
+    },
+    "search": {
+      "placeholder": "搜索代表",
+      "result": "搜索结果",
+      "name": "姓名",
+      "address": "地址"
+    },
+    "voteData": {
+      "all": "共",
+      "delegates": {
+        "tab": "代表列表",
+        "unit": "代表",
+        "th1": "等级",
+        "th2": "名称",
+        "th3": "地址",
+        "th4": "生产率",
+        "th5": "伪造区块",
+        "th6": "批准"
+      },
+      "record": {
+        "tab": "投票记录",
+        "unit": "记录",
+        "th1": "等级",
+        "th2": "名称",
+        "th3": "地址",
+        "th4": "生产率",
+        "th5": "伪造区块",
+        "th6": "批准"
+      },
+      "voters": {
+        "tab": "我的投票",
+        "unit": "投票",
+        "th1": "名称",
+        "th2": "地址",
+        "th3": "百分比"
+      }
+    }
   },
   "transfer": {
     "title": "新转移",
