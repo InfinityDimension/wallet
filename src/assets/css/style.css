@@ -11,6 +11,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+  display: none;
+}
 input::-webkit-input-placeholder {
   color: #C5C7CB;
   font-size: 14px;
@@ -769,7 +774,7 @@ textarea:focus {
   padding: 12px 20px;
   margin-bottom: 25px;
 }
-.vote .search .search-input {
+.vote .search .search-input input {
   width: 100%;
   height: 44px;
   color: #4C5155;
@@ -777,8 +782,40 @@ textarea:focus {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-.vote .search .search-input:focus {
+.vote .search .search-input input:focus {
   outline: none;
+}
+.vote .search .result h5 {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 25px 0 20px;
+  font-weight: 500;
+}
+.vote .search .result h5 span {
+  color: #297AFF;
+}
+.vote .vote-data {
+  background-color: #fff;
+  padding: 15px 15px 30px 15px;
+}
+.vote .vote-data .el-tabs__active-bar {
+  width: 50px !important;
+}
+.vote .vote-data .el-tabs__item {
+  color: #C5C7CB;
+  line-height: 64px;
+  height: 64px;
+}
+.vote .vote-data .is-active {
+  color: #3291FF;
+}
+.vote .vote-data h4 {
+  color: #4C5155;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  padding: 10px 0 20px 0;
+  font-weight: 500;
 }
 .transfer h3 {
   font-size: 20px;

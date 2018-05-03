@@ -56,6 +56,10 @@ export default {
       li:first-child{
         border-left: none;
       }
+      .active{
+        border-top: none;
+        border-bottom: none;
+      }
     }
   }
 }

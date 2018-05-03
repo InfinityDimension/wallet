@@ -134,7 +134,40 @@
       "btn": "VOTE"
     },
     "search": {
-      "placeholder": "Search Delegates"
+      "placeholder": "Search Delegates",
+      "result": "Search Results",
+      "name": "Name",
+      "address": "Address"
+    },
+    "voteData": {
+      "all": "All",
+      "delegates": {
+        "tab": "Delegate List",
+        "unit": "Delegates",
+        "th1": "Rank",
+        "th2": "Name",
+        "th3": "Address",
+        "th4": "Productivity",
+        "th5": "Forged Blocks",
+        "th6": "Approval"
+      },
+      "record": {
+        "tab": "Vote Record",
+        "unit": "Records",
+        "th1": "Rank",
+        "th2": "Name",
+        "th3": "Address",
+        "th4": "Productivity",
+        "th5": "Forged Blocks",
+        "th6": "Approval"
+      },
+      "voters": {
+        "tab": "My Voters",
+        "unit": "Voters",
+        "th1": "Name",
+        "th2": "Address",
+        "th3": "Percentage"
+      }
     }
   },
   "transfer": {
