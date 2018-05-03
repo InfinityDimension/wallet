@@ -44,11 +44,11 @@
     <el-dialog :title="$t('delegate.register.title')" width="700px" :visible.sync="dialogFormVisible" class="delegate-register">
       <p>{{ $t("delegate.register.prompt") }}</p>
       <h5>{{ $t("delegate.register.name") }}</h5>
-      <input type="text" :placeholder="$t('delegate.register.placeholder')">
+      <input type="text" :placeholder="$t('delegate.register.placeholder')" v-model="registerName">
       <div slot="footer" class="dialog-footer">
         <span class="spend">{{ $t("delegate.register.spend") }}</span>
         <el-button @click="dialogFormVisible = false">{{ $t("delegate.register.cancel") }}</el-button>
-        <el-button type="primary" @click="dialogFormVisible = false">{{ $t("delegate.register.register") }}</el-button>
+        <el-button type="primary" @click="registerSub">{{ $t("delegate.register.register") }}</el-button>
       </div>
     </el-dialog>
   </div>
@@ -61,7 +61,8 @@ export default {
   data(){
     return {
       dialogFormVisible: false, //模态框默认隐藏
-      isDelegate: true, //是否注册为代表
+      isDelegate: false, //是否注册为代表
+      registerName: '', //模态框注册姓名
       blockData: [{
         id: '6421980538sdsad',
         height: '596356',
@@ -87,6 +88,16 @@ export default {
         amount: '499.12345678',
         forged: '4.1'
       }]
+    }
+  },
+  methods:{
+    registerSub(){
+      if(this.registerName === ''){
+        this.$message.error(this.$t("delegate.register.error"));
+      }else{
+        this.dialogFormVisible = false;
+        this.isDelegate = true;
+      }
     }
   },
   components:{

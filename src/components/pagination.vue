@@ -44,6 +44,9 @@ export default {
     .btn-next{
       border-radius: 0 4px 4px 0;
     }
+    button:disabled{
+      color: #D8D8D8;
+    }
     .el-pager{
       li{
         color: #1B76FF;

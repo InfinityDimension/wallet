@@ -106,7 +106,8 @@
       "placeholder": "请选择一个代表名称",
       "spend": "注册需要 0.1 HTC",
       "cancel": "取消",
-      "register": "注册"
+      "register": "注册",
+      "error": "名称为空！"
     },
     "info": {
       "name": "名称",
@@ -135,7 +136,15 @@
     "title": "投票",
     "view": {
       "prompt": "查看选择",
-      "btn": "投票"
+      "btn": "投票",
+      "seeTitle": "已选列表",
+      "confirmTitle": "为代表投票",
+      "th1": "名称",
+      "th2": "地址",
+      "confirmPrompt": "请确认您的投票，你可以在一次投票中选择最多33人",
+      "spend": "投票需要 0.1 HTC",
+      "cancel": "取消",
+      "confirm": "确认投票"
     },
     "search": {
       "placeholder": "搜索代表",

@@ -2,6 +2,9 @@ body{
   margin: 0;
   min-height: 1px;
 }
+button{
+  cursor: pointer;
+}
 .flex{
   display: flex;
   justify-content: space-between;
@@ -767,6 +770,7 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
       color: #4C5155;
       font-size: 14px;
       vertical-align: middle;
+      cursor: pointer;
       span{
         color: #297AFF;
       }
@@ -835,6 +839,55 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus {
       margin: 0;
       padding: 10px 0 20px 0;
       font-weight: 500;
+    }
+  }
+  .select-model{
+    .el-dialog__header{
+      text-align: center;
+      padding: 0;
+    }
+    .el-dialog__body{
+      h5{
+        margin: 0 0 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        span{
+          color: #297AFF;
+        }
+      }
+      p{
+        text-align: center;
+        font-size: 14px;
+        color: #C5C7CB;
+        margin: 0 0 20px;
+        line-height: 16px;
+      }
+    }
+    .el-dialog__footer{
+      padding: 8px 40px;
+      border-top: 1px solid rgba(0,0,0,.08);
+      position: relative;
+      .spend{
+        position: absolute;
+        left: 40px;
+        line-height: 54px;
+        top: 8px;
+        color: #FF6556;
+        font-size: 14px;
+      }
+      button{
+        height: 54px;
+      }
+      .el-button--primary{
+        width: 150px;
+        background: #3291FF;
+      }
+      .el-button--default{
+        border: none;
+        color: #C5C7CB;
+      }
     }
   }
 }

@@ -2,6 +2,9 @@ body {
   margin: 0;
   min-height: 1px;
 }
+button {
+  cursor: pointer;
+}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -752,6 +755,7 @@ textarea:focus {
   color: #4C5155;
   font-size: 14px;
   vertical-align: middle;
+  cursor: pointer;
 }
 .vote .vote-view div span {
   color: #297AFF;
@@ -816,6 +820,51 @@ textarea:focus {
   margin: 0;
   padding: 10px 0 20px 0;
   font-weight: 500;
+}
+.vote .select-model .el-dialog__header {
+  text-align: center;
+  padding: 0;
+}
+.vote .select-model .el-dialog__body h5 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.vote .select-model .el-dialog__body h5 span {
+  color: #297AFF;
+}
+.vote .select-model .el-dialog__body p {
+  text-align: center;
+  font-size: 14px;
+  color: #C5C7CB;
+  margin: 0 0 20px;
+  line-height: 16px;
+}
+.vote .select-model .el-dialog__footer {
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.vote .select-model .el-dialog__footer .spend {
+  position: absolute;
+  left: 40px;
+  line-height: 54px;
+  top: 8px;
+  color: #FF6556;
+  font-size: 14px;
+}
+.vote .select-model .el-dialog__footer button {
+  height: 54px;
+}
+.vote .select-model .el-dialog__footer .el-button--primary {
+  width: 150px;
+  background: #3291FF;
+}
+.vote .select-model .el-dialog__footer .el-button--default {
+  border: none;
+  color: #C5C7CB;
 }
 .transfer h3 {
   font-size: 20px;

@@ -106,7 +106,8 @@
       "placeholder": "Please choose a delegate name",
       "spend": "Register requires 0.1 HTC",
       "cancel": "CANCEL",
-      "register": "REGISTER"
+      "register": "REGISTER",
+      "error": "Empty Name!"
     },
     "info": {
       "name": "Name",
@@ -135,7 +136,15 @@
     "title": "Vote",
     "view": {
       "prompt": "View Selection",
-      "btn": "VOTE"
+      "btn": "VOTE",
+      "seeTitle": "Selections",
+      "confirmTitle": "Vote for delegate",
+      "th1": "Name",
+      "th2": "Address",
+      "confirmPrompt": "Please confirm your vote. You can choose up to 33 people in one vote",
+      "spend": "Vote requires 0.1 HTC",
+      "cancel": "CANCEL",
+      "confirm": "CONFIRM VOTE"
     },
     "search": {
       "placeholder": "Search Delegates",
