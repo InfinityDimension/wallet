@@ -48,9 +48,7 @@
         <el-header>
           <div class="head flex">
             <div class="search-box flex">
-              <input type="text" :placeholder="$t('head.placeholder')" v-model="search" />
-              <!--下面input阻止浏览器自动填充密码-->
-              <input type="text" class="hide-input" />
+              <input type="text" :placeholder="$t('head.placeholder')" v-model="search" autocomplete="new-password" />
               <div class="search-btn">
                 <img src="/static/img/head-search.png" alt="">
               </div>

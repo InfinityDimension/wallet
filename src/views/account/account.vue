@@ -38,9 +38,9 @@
           <div class="secret">
             <h5>{{ $t("account.secret.title") }}</h5>
             <h6>{{ $t("account.secret.name1") }}</h6>
-            <input type="password" :placeholder="$t('account.secret.placeholder1')" v-model="password1" />
+            <input type="password" :placeholder="$t('account.secret.placeholder1')" v-model="password1" autocomplete="new-password" />
             <h6>{{ $t("account.secret.name2") }}</h6>
-            <input type="password" :placeholder="$t('account.secret.placeholder2')" v-model="password2" />
+            <input type="password" :placeholder="$t('account.secret.placeholder2')" v-model="password2" autocomplete="new-password" />
             <p>{{ $t("account.secret.prompt") }}</p>
             <button>{{ $t("account.secret.submit") }}</button>
           </div>
