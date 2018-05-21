@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from '@/store/store'
+import {loginStatus} from '../utils/util'
 const Index = () => import('@/views/index/index');
 const Login = () => import('@/views/login/login');
 const Register = () => import('@/views/login/register');
@@ -60,7 +61,7 @@ export default new Router({
         }
       ],
       beforeEnter:(to,from,next)=>{
-        if(store.state.password !== ''){
+        if(loginStatus()){
           next();
         }else{
           next({path: '/login'})

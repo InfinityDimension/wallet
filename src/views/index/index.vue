@@ -87,7 +87,12 @@ export default {
   },
   methods: {
     signOut(){
-      handleLocalStorage('remove','login');
+      store.commit('setPassword', '');
+      store.commit('setPublicKey', '');
+      store.commit('setPrivateKey', '');
+      handleLocalStorage('remove','mainPassword');
+      handleLocalStorage('remove','publicKey');
+      handleLocalStorage('remove','privateKey');
       this.$router.push({path: '/login'})
     }
   }
