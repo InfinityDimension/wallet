@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import {handleLocalStorage} from '../utils/util'
+import store from '@/store/store'
 const Index = () => import('@/views/index/index');
 const Login = () => import('@/views/login/login');
 const Register = () => import('@/views/login/register');
@@ -60,7 +60,7 @@ export default new Router({
         }
       ],
       beforeEnter:(to,from,next)=>{
-        if(handleLocalStorage('get','login')==='yes'){
+        if(store.state.password !== ''){
           next();
         }else{
           next({path: '/login'})

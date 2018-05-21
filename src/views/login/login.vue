@@ -30,6 +30,8 @@
 
 <script>
   import {handleLocalStorage} from '../../utils/util'
+  import {crypto} from 'htc-js'
+  import store from '@/store/store'
 export default {
   name: 'index',
   data () {
@@ -79,12 +81,31 @@ export default {
       }
     },
     loginSub(){
-      //判断密码是否正确
-      if(this.password.length > 20){
-        handleLocalStorage('set','login','yes');
-        this.$router.push({path: '/'})
-      }else{
+      //判断密码是否为空
+      if(this.password.length === 0){
         this.err = true;
+      }else{
+        //判断密码是否正确
+        if(crypto.getKeys(this.password)){
+          let keyPassword = crypto.getKeys(this.password);
+          //保存密码信息到vuex
+          store.commit('setPassword', this.password);
+          store.commit('setPublicKey', keyPassword.publicKey);
+          store.commit('setPrivateKey', keyPassword.privateKey);
+          if(this.checked === true){
+            //记住密码，保存到localstorage
+            handleLocalStorage('set','mainPassword',this.password);
+            handleLocalStorage('set','publicKey',keyPassword.publicKey);
+            handleLocalStorage('set','privateKey',keyPassword.privateKey);
+          }else{
+            handleLocalStorage('remove','mainPassword');
+            handleLocalStorage('remove','publicKey');
+            handleLocalStorage('remove','privateKey');
+          }
+          this.$router.push({path: '/'})
+        }else{
+          this.err = true;
+        }
       }
     }
   }

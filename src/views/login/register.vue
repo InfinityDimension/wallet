@@ -38,6 +38,7 @@
   import {crypto} from 'htc-js'
   import {saveAs} from '../../assets/js/FileSaver.min'
   import {fetchTest} from '@/api/api'
+  import store from '@/store/store'
   export default {
     name: 'index',
     data() {
@@ -46,6 +47,8 @@
         subPassword: '', //填写的密码
         step: 1, //步骤1，步骤2
         err: false,  //登录出错
+        publicKey: '',
+        privateKey: ''
       }
     },
     beforeCreate() {
@@ -53,8 +56,11 @@
     },
     created() {
       this.password = crypto.generateSecret();
+      let passKey = crypto.getKeys(this.password);
+      this.publicKey = passKey.publicKey;
+      this.privateKey = passKey.privateKey;
       fetchTest().then(res => {
-        console.log(res.data)
+        console.log(res.data);
       })
     },
     methods: {
@@ -68,8 +74,13 @@
       },
       loginSub() {
         //判断密码
-        if (this.password.length > 20) {
-          handleLocalStorage('set', 'login', 'yes');
+        if (this.password === this.subPassword) {
+          store.commit('setPassword', this.password);
+          store.commit('setPublicKey', this.publicKey);
+          store.commit('setPrivateKey', this.privateKey);
+          handleLocalStorage('set', 'mainPassword', this.password);
+          handleLocalStorage('set', 'publicKey', this.publicKey);
+          handleLocalStorage('set', 'privateKey', this.privateKey);
           this.$router.push({path: '/'})
         } else {
           this.err = true;

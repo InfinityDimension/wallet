@@ -70,7 +70,8 @@
 </template>
 
 <script>
-  import {handleLocalStorage} from '../../utils/util'
+  import {handleLocalStorage, loginStatus} from '../../utils/util'
+  import store from '@/store/store'
 export default {
   name: 'index',
   data () {
@@ -80,6 +81,9 @@ export default {
   },
   beforeCreate(){
     document.querySelector('body').removeAttribute('style');
+  },
+  mounted(){
+    console.log(loginStatus());
   },
   methods: {
     signOut(){
@@ -92,9 +96,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.header{
-  line-height: 80px;
-  display: flex;
-  justify-content: space-between;
-}
+
 </style>
