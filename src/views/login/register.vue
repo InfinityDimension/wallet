@@ -10,11 +10,11 @@
         <p>{{ $t('register.info') }}</p>
       </div>
       <div class="sub-box">
-        <button @click="downloadTXT">下载</button>
+        <button @click="downloadTXT">{{ $t("register.step1.btn1") }}</button>
         <button v-clipboard:copy="password" v-clipboard:success="onCopy" v-clipboard:error="onError">{{
-          $t("register.step1.btn1") }}
+          $t("register.step1.btn2") }}
         </button>
-        <button @click="next">{{ $t("register.step1.btn2") }}</button>
+        <button @click="next">{{ $t("register.step1.btn3") }}</button>
       </div>
     </div>
     <div class="steps" v-show="step === 2">

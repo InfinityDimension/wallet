@@ -13,8 +13,9 @@
   "register": {
     "step1": {
       "tab": "Step1: Generate a Secret",
-      "btn1": "SAVE SECRET",
-      "btn2": "NEXT"
+      "btn1": "DOWNLOAD",
+      "btn2": "SAVE SECRET",
+      "btn3": "NEXT"
     },
     "step2": {
       "tab": "Step2: Confirm your Secret",
