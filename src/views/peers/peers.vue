@@ -70,6 +70,9 @@ export default {
       }]
     }
   },
+  created: {
+    //获取后台展示数据
+  },
   components:{
     peerTable
   }

@@ -15,8 +15,8 @@
             <li>
               <div class="name">{{ $t("account.info.name2") }}</div>
               <div>
-                <span>A75e5skuvKeXHiL9PZU4hxDfqUHYSctcHw</span>
-                <img src="/static/img/copy.png" alt="">
+                <span>{{address}}</span>
+                <img src="/static/img/copy.png" alt="" v-clipboard:copy="address" v-clipboard:success="onCopy" v-clipboard:error="onError">
               </div>
             </li>
             <li>
@@ -28,8 +28,8 @@
             <li>
               <div class="name">{{ $t("account.info.name4") }}</div>
               <div>
-                <span>057487c0464a3d6bb43ddd56f86ab16406209e86eaa6456e1e8704c068ae6ba2</span>
-                <img src="/static/img/copy.png" alt="">
+                <span>{{publicKey}}</span>
+                <img src="/static/img/copy.png" alt="" v-clipboard:copy="publicKey" v-clipboard:success="onCopy" v-clipboard:error="onError">
               </div>
             </li>
           </ul>
@@ -56,12 +56,24 @@ export default {
   name: "account",
   data(){
     return {
-      activeName: 'first',
+      address: 'A75e5skuvKeXHiL9PZU4hxDfqUHYSctcHw',
+      publicKey: '057487c0464a3d6bb43ddd56f86ab16406209e86eaa6456e1e8704c068ae6ba2',
+      activeName: 'first', //tab页
       password1: '',
       password2: ''
     }
+  },
+  methods: {
+    onCopy() { //复制成功
+      this.$message({
+        message: this.$t('register.copy.success'),
+        type: 'success'
+      });
+    },
+    onError() { //复制失败
+      this.$message.error(this.$t('register.copy.fail'));
+    }
   }
-
 }
 </script>
 

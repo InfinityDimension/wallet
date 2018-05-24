@@ -55,7 +55,7 @@
             </div>
             <div class="user flex">
               <div class="imgbg user-img" :style="{backgroundImage:'url(/static/img/head.png)'}"></div>
-              <span>14512322023176S</span>
+              <span>{{username}}</span>
               <img src="/static/img/arrow-up.png" alt="">
               <ul>
                 <li @click="signOut">{{ $t('head.signOut') }}</li>
@@ -63,7 +63,9 @@
             </div>
           </div>
         </el-header>
-        <el-main><router-view /></el-main>
+        <el-main>
+          <router-view />
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -76,7 +78,8 @@ export default {
   name: 'index',
   data () {
     return {
-      search: '' //搜索内容
+      search: '', //搜索内容
+      username: '14512322023176S'
     }
   },
   beforeCreate(){
@@ -93,13 +96,12 @@ export default {
       handleLocalStorage('remove','mainPassword');
       handleLocalStorage('remove','publicKey');
       handleLocalStorage('remove','privateKey');
-      this.$router.push({path: '/login'})
+      this.$router.push({path: '/login'});
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>
