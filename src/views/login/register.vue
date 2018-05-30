@@ -60,7 +60,8 @@
       this.publicKey = passKey.publicKey;
       this.privateKey = passKey.privateKey;
       fetchTest().then(res => {
-        console.log('mock数据：'+res.data);
+        console.log('mock数据：');
+        console.log(res.data);
       })
     },
     methods: {

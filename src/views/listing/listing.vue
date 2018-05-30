@@ -42,9 +42,6 @@ export default {
       }]
     }
   },
-  created: {
-    //获取后台展示数据
-  },
   methods: {
     getPageData(val){
       console.log('接收到的分页：'+val)
